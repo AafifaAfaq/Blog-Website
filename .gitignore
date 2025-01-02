@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+NEXT_PUBLIC_SANITY_PROJECT_ID="flsctcdr"
+NEXT_PUBLIC_SANITY_DATASET="production"
