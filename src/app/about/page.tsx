@@ -1,5 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ABOUT = () => {
   return (
@@ -12,7 +14,7 @@ const ABOUT = () => {
         <p className="text-lg text-gray-700 mb-6">
           Your go-to place for understanding, exploring, and embracing the world of Artificial Intelligence.
         </p>
-        <img
+        <Image
           src="/about.webp"  // Use a striking hero image
           alt="Smartify AI"
           className="w-full h-80 object-cover rounded-lg shadow-lg mb-6"
@@ -49,7 +51,7 @@ const ABOUT = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Team Member 1 */}
           <div className="bg-rose-100 border-2 border-rose-400 rounded-lg shadow-lg hover:shadow-xl p-6 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
-            <img
+            <Image
               src="/pic3.webp"
               alt="John Doe"
               className="w-24 h-24 rounded-full object-cover mb-4"
@@ -62,7 +64,7 @@ const ABOUT = () => {
           </div>
           {/* Team Member 2 */}
           <div className="bg-rose-100 border-2 border-rose-400 rounded-lg shadow-lg hover:shadow-xl p-6 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
-            <img
+            <Image
               src="/pic2.jpg"
               alt="Jane Smith"
               className="w-24 h-24 rounded-full object-cover mb-4"
@@ -75,7 +77,7 @@ const ABOUT = () => {
           </div>
           {/* Team Member 3 */}
           <div className="bg-rose-100 border-2 border-rose-400 rounded-lg shadow-lg hover:shadow-xl p-6 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
-            <img
+            <Image
               src="/pic1.jpg"
               alt="Alice Johnson"
               className="w-24 h-24 rounded-full object-cover mb-4"

@@ -3,6 +3,7 @@
 import { client } from '@/sanity/lib/client';
 import imageUrlBuilder from '@sanity/image-url';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 // Sanity's URL builder configuration
 const builder = imageUrlBuilder(client);
@@ -60,7 +61,7 @@ export default function Blog() {
               key={index}
               className="bg-white border-2 border-gray-400 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition-all duration-300"
             >
-              <img
+              <Image
                 src={urlForImage(post.image.asset)}
                 alt={post.title}
                 className="w-full h-48 object-cover"

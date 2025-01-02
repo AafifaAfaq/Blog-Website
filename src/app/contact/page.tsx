@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 

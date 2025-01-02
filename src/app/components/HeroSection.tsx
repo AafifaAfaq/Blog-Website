@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -32,7 +33,7 @@ const HeroSection = () => {
 
         {/* Image Section */}
         <div className="md:w-1/2">
-          <img
+          <Image
             src="/hero1.jpg"
             alt="Artificial Intelligence"
             className="rounded-lg shadow-lg max-w-full h-auto"

@@ -3,6 +3,7 @@ import { components } from '@/app/components/CustomComponent';
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 import { PortableText } from '@portabletext/react';
+import Image from 'next/image';
 
 export const revalidate = 60; // In seconds
 
@@ -40,7 +41,7 @@ export default async function Page({ params: { slug } }: { params: { slug: strin
         {/* Image Section (Left) */}
         <div className="w-full md:w-[48%] mb-8 md:mb-0">
           <div className="w-full h-auto overflow-hidden rounded-xl shadow-2xl transition-transform duration-500 transform hover:scale-105">
-            <img
+            <Image
               src={urlFor(post.image).width(1200).height(700).url()}
               alt={post.title}
               className="w-full h-[400px] sm:h-[500px] object-cover rounded-xl shadow-xl"
