@@ -63,7 +63,7 @@ export default async function Page({ params: { slug } }: { params: { slug: strin
       {/* Author Section */}
       <section className="flex gap-6 sm:gap-8 items-start justify-start mb-12 animate__animated animate__fadeInUp">
         <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-rose-600">
-          <img
+          <Image
             src={urlFor(post.author.image).width(100).height(100).url()}
             alt={post.author.name}
             className="object-cover w-full h-full"
