@@ -23,7 +23,7 @@ const ReviewPage = () => {
     },
   ]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if (review && rating) {
       setReviews([

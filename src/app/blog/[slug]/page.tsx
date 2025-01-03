@@ -45,6 +45,8 @@ export default async function Page({ params: { slug } }: { params: { slug: strin
               src={urlFor(post.image).width(1200).height(700).url()}
               alt={post.title}
               className="w-full h-[400px] sm:h-[500px] object-cover rounded-xl shadow-xl"
+              width={500}
+              height={500}
             />
           </div>
         </div>
@@ -67,6 +69,8 @@ export default async function Page({ params: { slug } }: { params: { slug: strin
             src={urlFor(post.author.image).width(100).height(100).url()}
             alt={post.author.name}
             className="object-cover w-full h-full"
+            width={100}
+            height={100}
           />
         </div>
         <div className="flex flex-col justify-center gap-2">

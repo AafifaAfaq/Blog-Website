@@ -36,6 +36,8 @@ const HeroSection = () => {
           <Image
             src="/hero1.jpg"
             alt="Artificial Intelligence"
+            width={500}
+            height={500}
             className="rounded-lg shadow-lg max-w-full h-auto"
           />
         </div>

@@ -65,6 +65,8 @@ export default function Blog() {
                 src={urlForImage(post.image.asset)}
                 alt={post.title}
                 className="w-full h-48 object-cover"
+                width={400}
+                height={400}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">

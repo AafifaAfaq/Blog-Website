@@ -17,6 +17,8 @@ const ABOUT = () => {
         <Image
           src="/about.webp"  // Use a striking hero image
           alt="Smartify AI"
+          width={1280}  // Set the width to maximize image quality and prevent distortion
+          height={600}  // Set the height to maintain aspect ratio and prevent distortion
           className="w-full h-80 object-cover rounded-lg shadow-lg mb-6"
         />
        
@@ -55,6 +57,8 @@ const ABOUT = () => {
               src="/pic3.webp"
               alt="John Doe"
               className="w-24 h-24 rounded-full object-cover mb-4"
+              width={100}
+              height={100}
             />
             <h3 className="text-xl font-semibold text-gray-800">John Doe</h3>
             <p className="text-sm text-gray-600">Founder & CEO</p>
@@ -68,6 +72,8 @@ const ABOUT = () => {
               src="/pic2.jpg"
               alt="Jane Smith"
               className="w-24 h-24 rounded-full object-cover mb-4"
+              width={100}
+              height={100}
             />
             <h3 className="text-xl font-semibold text-gray-800">Jane Smith</h3>
             <p className="text-sm text-gray-600">Chief Technology Officer</p>
@@ -81,6 +87,8 @@ const ABOUT = () => {
               src="/pic1.jpg"
               alt="Alice Johnson"
               className="w-24 h-24 rounded-full object-cover mb-4"
+              width={100}
+              height={100}
             />
             <h3 className="text-xl font-semibold text-gray-800">Alice Johnson</h3>
             <p className="text-sm text-gray-600">Lead AI Researcher</p>
