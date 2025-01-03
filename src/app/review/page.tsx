@@ -87,7 +87,7 @@ const ReviewPage = () => {
               onChange={(e) => setReview(e.target.value)}
               className="w-full p-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-400 transition duration-300"
               placeholder="Write your thoughts here..."
-              rows="6"
+              rows={6}
               required
             ></textarea>
           </div>
