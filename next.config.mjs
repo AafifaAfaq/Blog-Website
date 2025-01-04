@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
         images: {
-          domains: ['cdn.sanity.io'], // Allow images from the Sanity CDN
+          domains: ['i.pravatar.cc', 'cdn.sanity.io'], // Allow images from the Sanity CDNn
         },
       
 };
